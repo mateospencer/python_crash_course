@@ -5,3 +5,5 @@ The code may have purposeful errors where the assignment asked for a value to be
 Some code may be duplicated as data is altered later. 
 
 Some code will be inefficient because it follows what has been learned up to that point in the book. 
+
+In retrospect, it would have made plenty of sense to organize the code by its location in the book in the file names which is why the file naming format changes. 
