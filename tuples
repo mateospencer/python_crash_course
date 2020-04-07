@@ -1,0 +1,21 @@
+# Tuples
+# Values that dont change are called immutables. Immutable lists are called Tuples. 
+# 
+# A list looked like this:     values = [1,20,5,6] etc. 
+# A tuple looks similiar:      values = (4, 200)
+# 
+# Accessing values is the same regardless if a tuple or a list. e.g. print(values[0])
+#
+# A tuple of a single value requires a trailign comma. e.g. age = (28,)
+#
+# Immutable lists cant have values altered: 
+# e.g.  dimensions = (200, 40)
+#		dimensions[0] = 300
+# would return a type error. Whereas, youc an associate a new tuple with an existing variable name because reassigning a variable is valid. 
+# e.g. 	dimensions = (200, 100)
+#		print(dimensions)
+#		dimensions = (100, 300)
+#		print(dimensions)
+# would print just fine. 
+
+# 4-13: Buffet
