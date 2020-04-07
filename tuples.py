@@ -19,7 +19,21 @@
 # would print just fine. 
 
 # 4-13: Buffet
-buffet_foods = (crab legs, rice, lo mein, shrimp, soup)
 
+
+buffet_foods = ("crab legs", "rice", "lo mein", "shrimp", "soup")
+
+# Q1 Print each item in for loop
+for food in buffet_foods:
+	print(food)
+
+# Q2 Try to modify one of the items and make sure Python rejects change
+# Commented out so rest of code runs ok afterwards.
+# buffet_foods[0] = "sauteed beans"
+
+# Q3 Add a line that rewrites the tuple to replace two items with different foods and then uses a for loop to print each of the items on a revised menu.
+# This is quite simple and essentially the same code as before with different items assigned to variable. 
+
+buffet_foods = ("crab legs", "fried rice", "bao", "shrimp", "soup")
 for food in buffet_foods:
 	print(food)
