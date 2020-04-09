@@ -48,11 +48,29 @@ print(daughter_age < 1 or son_age < 1)
 #	Section 5-2: More Conditional Tests
 #	Try to have at least one test (from 5-1 or below) that returns true and one that returns
 #	false for  each of the following:
-#
-#		Tests for equality and inequality with strings
-#		Tests using the lower() method
-#		Numerical tests involving equality and inequality, grater than and less than, greater than 
-#			or equal to, and less than or equal to
-#		Tests using the and keyword and the or keyword
-#		Test whether an item is in a list
-#		Test whether an item is not in a list
+
+#	Tests using strings: Used in 5-1
+
+#	Tests using lower(): as follows
+soup = 'Pho'
+soup.lower() == 'pho'
+
+sandwich = 'Banh Mi'
+sandwich.lower() == 'banh mi'
+
+#	Using equality and inequality: Used in 5-1
+#	Using the and and the or: Used in 5-1 
+
+visited_places = ['Hawaii', 'California', 'Puerto Rico', 'New York', 'Florida']
+
+#	Item is in a list:
+print("Is Hawaii in the list of places that I've visited? The answer should be True.")
+print('Hawaii' in visited_places)
+print("Is Alaska in the list of places that I've visted? The answer should be False.")
+print('Alaska' in visited_places)
+
+#	Item is not in a list:
+print("Is American Samoa not in the list of places that I've visited? The answer should be True.")
+print('American Samoa' not in visited_places)
+print("Is Florida not in the in the list of places that I've visited? The answer should be False.")
+print('Florida' not in visited_places)
