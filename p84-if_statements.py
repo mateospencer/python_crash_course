@@ -20,7 +20,7 @@ if 'red' in alien_color:
 	print("You just earned 10 points.")
 
 if 'yellow' in alien_color:
-	prnt("You just earned 20 points.")
+	print("You just earned 20 points.")
 
 #	Section 5-4: Alient Colors #2
 #	Choose a color for an alien as you did above and write an if-else chain. 
@@ -33,14 +33,15 @@ if 'yellow' in alien_color:
 alien_color = ['green']
 
 if 'green' in alien_color:
-	print("You just earned 5 points for shooting the alien."
-else: 
+	print("You just earned 5 points for shooting the alien.")
+else:
 	print("You just earned 10 points.")
+
 
 #	Runs the else block
 alien_color = ['yellow']
 
 if 'green' in alien_color:
-	print("You just earned 5 points for shooting the alien."
+	print("You just earned 5 points for shooting the alien.")
 else: 
 	print("You just earned 10 points.")
