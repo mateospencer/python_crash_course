@@ -51,4 +51,28 @@ else:
 #	* If alien = green, print that player earned 5 pts. 
 #	* If alien = yellow, print that player earned 10 pts.
 #	* If alien = red, print that player earned 15 pts.
-#	* Write three versions of program, making sure each message is printed for the approp color.
+#	* Write three versions of program, making sure each message is printed for the appro color.
+
+alien_color = ['red']
+if 'green' in alien_color:
+	print("You just earned 5 points.")
+elif 'yellow' in alien_color:
+	print("You just earned 10 points.")
+else: 
+	print("You just earned 15 points.")
+
+alien_color = ['yellow']
+if 'green' in alien_color:
+	print("You just earned 5 points.")
+elif 'yellow' in alien_color:
+	print("You just earned 10 points.")
+else: 
+	print("You just earned 15 points.")
+
+alien_color = ['green']
+if 'green' in alien_color:
+	print("You just earned 5 points.")
+elif 'yellow' in alien_color:
+	print("You just earned 10 points.")
+else: 
+	print("You just earned 15 points.")	
