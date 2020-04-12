@@ -22,7 +22,7 @@ if 'red' in alien_color:
 if 'yellow' in alien_color:
 	print("You just earned 20 points.")
 
-#	Section 5-4: Alient Colors #2
+#	Section 5-4: Alien Colors #2
 #	Choose a color for an alien as you did above and write an if-else chain. 
 #	* If the alien's color is green, print that the player just earned 5 points for shooting
 #		the alien. 
@@ -76,3 +76,13 @@ elif 'yellow' in alien_color:
 	print("You just earned 10 points.")
 else: 
 	print("You just earned 15 points.")	
+
+#	Section 5-6: Stages of Life
+#	Write an if-elif-else chain that determines a person's stage of life. Set a value for the 
+#		variable age, and then:
+#	* If person is <2yo, print that the person is a baby.
+#	* If >=2 but <4yo, person is a toddler
+#	* If >=4 but <13yo, person is a kid
+#	* If >=13 but <20yo, person is a teenager
+#	* If >=20 but <65yo, person is an adult
+#	* If >=65, person is an elder. 
