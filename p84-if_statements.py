@@ -45,3 +45,10 @@ if 'green' in alien_color:
 	print("You just earned 5 points for shooting the alien.")
 else: 
 	print("You just earned 10 points.")
+
+#	Section 5-5: Alien Colors #3
+#	Turn if-else chain from 5-4 into an if-elif-else chain.
+#	* If alien = green, print that player earned 5 pts. 
+#	* If alien = yellow, print that player earned 10 pts.
+#	* If alien = red, print that player earned 15 pts.
+#	* Write three versions of program, making sure each message is printed for the approp color.
