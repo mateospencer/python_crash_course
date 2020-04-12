@@ -87,9 +87,10 @@ else:
 #	* If >=20 but <65yo, person is an adult
 #	* If >=65, person is an elder. 
 
-age = ['10']
+#	Not quite sure why age = 28 works but age = ['28'] does not work. 
+age = 28
 
-if (age <2) and (age >0):
+if age <2 and age >0:
 	print("This person is a baby.")
 elif age >=2 and age <4:
 	print("This person is a toddler.")
