@@ -34,15 +34,16 @@ print(name + ", It would be a pleasure if you can join us over dinner.")
 #		person you are inviting. 
 #	* Print a second set of invitation messages, one for each person who is still in your list. 
 
-#print("I'm not able to attend tomorrow but I'll be sure to make the next dinner." + {guests[2]})
+print("I'm not able to attend tomorrow. -" + guests[2])
 
 invite_followup = "thank you for your RSVP. We can't wait to see you."
 declined_invites = 'Elon Musk'
 guests.remove(declined_invites)
-#print(f"Dear {guests[0]}, {invite_followup}")
-#print(f"Dear {guests[1]}, {invite_followup}")
-#print(f"Dear {guests[2]}, {invite_followup}")
-#print(f"Dear {guests[3]}, {invite_followup}")
+
+print("Dear " + guests[0].title() + ", Thank you for your RSVP. We can't wait to see you.")
+print("Dear " + guests[1].title() + ", Thank you for your RSVP. We can't wait to see you.")
+print("Dear " + guests[2].title() + ", Thank you for your RSVP. We can't wait to see you.")
+print("Dear " + guests[3].title() + ", Thank you for your RSVP. We can't wait to see you.")
 
 
 # 3-6 More Guests
