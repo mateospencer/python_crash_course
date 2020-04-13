@@ -90,7 +90,8 @@ else:
 #	* If >=20 but <65yo, person is an adult
 #	* If >=65, person is an elder. 
 
-#	Not quite sure why age = 28 works but age = ['28'] does not work. 
+#	Took awhile to figure out why age = 28 works but age = ['28'] does not work and it was because 
+#	I wasn't writing if 'age' <2, etc. 
 age = 28
 
 if age <2 and age >0:
@@ -116,3 +117,14 @@ else:
 #		like bananas!"
 
 favorite_fruits = ['mango', 'feijoa', 'kiwi']
+
+if 'mango' in favorite_fruits:
+	print("You really like mango!")
+if 'feijoa' in favorite_fruits:
+	print("You really like feijoa!")
+if 'kiwi' in favorite_fruits:
+	print("You really like kiwi!")
+if 'durian' in favorite_fruits:
+	print("You really like durian.")
+if 'pineapple' in favorite_fruits:
+	print("You really like pineapple.")
