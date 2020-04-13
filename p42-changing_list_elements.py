@@ -20,7 +20,7 @@ print(name + ", It would be a pleasure if you can join us over dinner.")
 name = guests[4].title()
 print(name + ", It would be a pleasure if you can join us over dinner.")
 
-#	Another way that this could work
+#	Another way that this could work:
 invite = {guests[0].title()} + "It would be a pleasure if you can join us over dinner tomorrow."
 print(invite)
 
@@ -34,7 +34,7 @@ print(invite)
 #		person you are inviting. 
 #	* Print a second set of invitation messages, one for each person who is still in your list. 
 
-print("Dear Matthew, I'm not able to attend tomorrow but I'll be sure to make the next dinner." + {guests[2]})
+print("I'm not able to attend tomorrow but I'll be sure to make the next dinner." + {guests[2]})
 
 invite_followup = "thank you for your RSVP. We can't wait to see you."
 declined_invites = 'Elon Musk'
