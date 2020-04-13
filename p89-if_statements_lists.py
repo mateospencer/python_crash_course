@@ -9,10 +9,13 @@
 #		status report?
 #	* Otherwise, print a generic greeting, such as Hello Jaden, thank you for logging in again. 
 
+#	Uncertain why I ran into errors using print(f"Hello, {username}") in last line. Will research
+#		later.
+
 usernames = ['admin', 'anguyen', 'bwong', 'csato', 'ddevi', 'emwangi', 'fibrahim']
 
-for user in usernames:
-	if usernames == 'admin':
+for username in usernames:
+	if username == 'admin':
 		print("Hello admin, would you like to see a status report?")
 	else:
-		print(f"Hello {user}, thank you for logging in again.")
+		print("Hello " + username + ", thank you for logging in again.")
