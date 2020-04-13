@@ -21,20 +21,20 @@ name = guests[4].title()
 print(name + ", It would be a pleasure if you can join us over dinner.")
 
 #	Another way that this could work:
-invite = {guests[0].title()} + "It would be a pleasure if you can join us over dinner tomorrow."
-print(invite)
+#invite = {guests[0].title()} + "It would be a pleasure if you can join us over dinner tomorrow."
+#print(invite)
 
 
 #	Section 3-5: Changing Guest List
 #	You just heard that one of your guests cant make the dinner, so you need to send out a new set
-#		of invitations. YOu'll have to think of someone else to invite. 
+#		of invitations. You'll have to think of someone else to invite. 
 #	* Start with your program from Exercise 3-4. Add a print() call at the end of your program
 #		stating the name of the guest who can't make it. 
 #	* Modify your list, replacing the name of the guest who can't make it with the name of the new
 #		person you are inviting. 
 #	* Print a second set of invitation messages, one for each person who is still in your list. 
 
-print("I'm not able to attend tomorrow but I'll be sure to make the next dinner." + {guests[2]})
+#print("I'm not able to attend tomorrow but I'll be sure to make the next dinner." + {guests[2]})
 
 invite_followup = "thank you for your RSVP. We can't wait to see you."
 declined_invites = 'Elon Musk'
@@ -59,13 +59,13 @@ guests.insert(3, 'Fa Mulan')
 guests.insert(-1, 'Heddy Lamarr')
 
 # new invites
-print(f"Dear {guests[0]}, \nThis invite confirms the new location for tonight's dinner.")
-print(f"Dear {guests[1]}, \nThis invite confirms the new location for tonight's dinner.")
-print(f"Dear {guests[2]}, \nThis invite confirms the new location for tonight's dinner.")
-print(f"Dear {guests[3]}, \nThis invite confirms the new location for tonight's dinner.")
-print(f"Dear {guests[4]}, \nThis invite confirms the new location for tonight's dinner.")
-print(f"Dear {guests[5]}, \nThis invite confirms the new location for tonight's dinner.")
-print(f"Dear {guests[6]}, \nThis invite confirms the new location for tonight's dinner.")
+#print(f"Dear {guests[0]}, \nThis invite confirms the new location for tonight's dinner.")
+#print(f"Dear {guests[1]}, \nThis invite confirms the new location for tonight's dinner.")
+#print(f"Dear {guests[2]}, \nThis invite confirms the new location for tonight's dinner.")
+#print(f"Dear {guests[3]}, \nThis invite confirms the new location for tonight's dinner.")
+#print(f"Dear {guests[4]}, \nThis invite confirms the new location for tonight's dinner.")
+#print(f"Dear {guests[5]}, \nThis invite confirms the new location for tonight's dinner.")
+#print(f"Dear {guests[6]}, \nThis invite confirms the new location for tonight's dinner.")
 
 
 # 3-7 Shrinking Guest List
@@ -81,13 +81,13 @@ uninvited_guests = guests.pop(-1)
 
 # Printing uninvite to removed guest per instructions
 # Uninviting Ip Man
-print(f"I am sorry {uninvited_guests}. {oops_message}")
+#print(f"I am sorry {uninvited_guests}. {oops_message}")
 
 # Checking guest list before removing
 #print(guests)
 uninvited_guests = guests.pop(-1)
 # Uninviting Heddy Lamarr
-print(f"I am sorry {uninvited_guests}. {oops_message}")
+#print(f"I am sorry {uninvited_guests}. {oops_message}")
 #print(guests)
 #print(uninvited_guests)
 
@@ -95,25 +95,25 @@ print(f"I am sorry {uninvited_guests}. {oops_message}")
 #print(guests)
 uninvited_guests = guests.pop(-1)
 #Uninviting Trevor Noah
-print(f"I am sorry {uninvited_guests}. {oops_message}")
+#print(f"I am sorry {uninvited_guests}. {oops_message}")
 
 # Checking guest list before removing
 #print(guests)
 uninvited_guests = guests.pop(-1)
 # Uninviting Fa Mulan
-print(f"I am sorry {uninvited_guests}, {oops_message}")
+#print(f"I am sorry {uninvited_guests}, {oops_message}")
 #print(guests)
 
 # Checking guest list before removing
 #print(guests)
 uninvited_guests = guests.pop(-1)
 # Uninviting Siddhartha
-print(f"I am sorry {uninvited_guests}, {oops_message}")
+#print(f"I am sorry {uninvited_guests}, {oops_message}")
 #print(guests)
 
 # Updating remaining guests that they are still invited
-print(f"Dear {guests[0]}, I am pleased to tell you that we still have a seat for you at tonights event.")
-print(f"Dear {guests[1]}, I am pleased to tell you that we still have a seat for you at tonights event.")
+#print(f"Dear {guests[0]}, I am pleased to tell you that we still have a seat for you at tonights event.")
+#print(f"Dear {guests[1]}, I am pleased to tell you that we still have a seat for you at tonights event.")
 
 # Removing the remaining guests wiht del per instructions. Then printing out to ensure the list is empty. 
 #Running this twice since I dont know how to do loops yet. 
