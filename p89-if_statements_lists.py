@@ -63,3 +63,14 @@ else:
 #	* Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be
 #		accepted. (To do this, you'll need to make a copy of current_users containing the lowercase
 #		versions of all existing users.)
+
+current_users = ['pgonzalez', 'qquispe', 'rmori', 'sinthavong', 'tali']
+new_users = ['rmori', 'tali', 'ujonsdottir', 'vborg', 'wrossi']
+
+current_users_lower = [user.lower() for user in current_users]
+
+for new_user in new_users:
+	if new_user in current_users:
+		print("Sorry, the username '" + new_user + "' is unavailable. Please enter a new username.")
+	else:
+		print("The username '" + new_user + "' is avaiable. Thank you for your registering.")
