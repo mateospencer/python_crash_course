@@ -46,30 +46,38 @@ print("Dear " + guests[2].title() + ", Thank you for your RSVP. We can't wait to
 print("Dear " + guests[3].title() + ", Thank you for your RSVP. We can't wait to see you.")
 
 
-# 3-6 More Guests
+#	3-6 More Guests
 
-# Printing each line manually because I dont know how to do loops yet. Using only guests[] puts the whole list on that line.
-#print(f"Dear {guests[0]}, \nWe found a bigger dinner table! Expect the party to be even bigger!")
-#print(f"Dear {guests[1]}, \nWe found a bigger dinner table! Expect the party to be even bigger!")
-#print(f"Dear {guests[2]}, \nWe found a bigger dinner table! Expect the party to be even bigger!")
-#print(f"Dear {guests[3]}, \nWe found a bigger dinner table! Expect the party to be even bigger!")
+#	You just found a bigger dinner table, so now more space is available. Think of three more
+#		guests to invite to dinner. 
+#	* Start with your program from 3-4 or 3-5. Add a print() call to the end of your program
+#		informing people that you found a bigger dinner table. 
+#	* Use insert() to add one new guest to the beginning of your list.
+#	* Use insert() to add one new guest to the middle of your list. 
+#	* Use append() to add one new guest to the end of your list. 
+#	* Print a new set of invitation messages, one for each person in your list. 
+
+print("Dear " + guests[0].title() + ", We found a bigger table! Expect a bigger party!")
+print("Dear " + guests[1].title() + ", We found a bigger table! Expect a bigger party!")
+print("Dear " + guests[2].title() + ", We found a bigger table! Expect a bigger party!")
+print("Dear " + guests[3].title() + ", We found a bigger table! Expect a bigger party!")
+
+#	A better way of doing this but with loops (covered later in book). 
+for guest in guests:
+	print("Dear " + guest.title() + ", We found a bigger table! Expect a bigger party!")
 
 guests.insert(0, 'Gandhi')
-# would like to find some sort of syntax to indicate the middle of a list. Cant find one yet so doing it manually here)
+#	Would like to find some sort of syntax to indicate the middle of a list. Cant find one yet so 
+#		doing it manually here)
 guests.insert(3, 'Fa Mulan')
 guests.insert(-1, 'Heddy Lamarr')
 
-# new invites
-#print(f"Dear {guests[0]}, \nThis invite confirms the new location for tonight's dinner.")
-#print(f"Dear {guests[1]}, \nThis invite confirms the new location for tonight's dinner.")
-#print(f"Dear {guests[2]}, \nThis invite confirms the new location for tonight's dinner.")
-#print(f"Dear {guests[3]}, \nThis invite confirms the new location for tonight's dinner.")
-#print(f"Dear {guests[4]}, \nThis invite confirms the new location for tonight's dinner.")
-#print(f"Dear {guests[5]}, \nThis invite confirms the new location for tonight's dinner.")
-#print(f"Dear {guests[6]}, \nThis invite confirms the new location for tonight's dinner.")
+#	New invites
+for guest in guests:
+	print("Dear " + guest.title() + ", This invite confirms the new location for tonight's dinner.")
 
 
-# 3-7 Shrinking Guest List
+#	Section 3-7: Shrinking Guest List
 oops_message = "This is embarrassing to admit but our new table hasn't arrived yet and we will only have space for two guests. We'll add you to the top of the list for next time."
 
 # Checking the guests before popping out
