@@ -8,3 +8,5 @@ Notes regarding this repo:
 * Some code will be inefficient because it follows what has been learned up to that point in the book. 
 
 * In retrospect, it would have made plenty of sense to organize the code by its location in the book in the file names which is why the file naming format changes. I'll use the opportunity to add comments on even simple files in order to make it more useful to others who may be going through the texts themselves and to get into the habit of adding better comments to my code. 
+
+* Code is excessively commented. This is because this code doubles as notes for me to refer back to or to help me jumping back and forth between concepts. 
