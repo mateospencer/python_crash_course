@@ -90,54 +90,32 @@ for guest in guests:
 #	* Use del to remove the last two names from your list, so you have an empty list. Print your
 #		list to make sure you actually have an empty list at the end of your program. 
 
-oops_message = "This is embarrassing to admit but our new table hasn't arrived yet and we will only have space for two guests. We'll add you to the top of the list for next time."
-
-# Checking the guests before popping out
-#print(guests)
 uninvited_guests = guests.pop(-1)
-# Checking the guests after popping out (Ipman removed)
-#print(guests)
-# Testing that guest was added to uninvited guests. Note: This is not a list. Pop only keeps the last popped value. Running this later won't add an additional value to 
-#print(uninvited_guests)
+print("I'm sorry " + uninvited_guests.title() + ", our new table hasn't arrive yet and we will \
+only have space for two guests.")
 
-# Printing uninvite to removed guest per instructions
-# Uninviting Ip Man
-#print(f"I am sorry {uninvited_guests}. {oops_message}")
-
-# Checking guest list before removing
-#print(guests)
 uninvited_guests = guests.pop(-1)
-# Uninviting Heddy Lamarr
-#print(f"I am sorry {uninvited_guests}. {oops_message}")
-#print(guests)
-#print(uninvited_guests)
+print("I'm sorry " + uninvited_guests.title() + ", our new table hasn't arrive yet and we will \
+only have space for two guests.")
 
-# Checking guest list before removing
-#print(guests)
 uninvited_guests = guests.pop(-1)
-#Uninviting Trevor Noah
-#print(f"I am sorry {uninvited_guests}. {oops_message}")
+print("I'm sorry " + uninvited_guests.title() + ", our new table hasn't arrive yet and we will \
+only have space for two guests.")
 
-# Checking guest list before removing
-#print(guests)
 uninvited_guests = guests.pop(-1)
-# Uninviting Fa Mulan
-#print(f"I am sorry {uninvited_guests}, {oops_message}")
-#print(guests)
+print("I'm sorry " + uninvited_guests.title() + ", our new table hasn't arrive yet and we will \
+only have space for two guests.")
 
-# Checking guest list before removing
-#print(guests)
 uninvited_guests = guests.pop(-1)
-# Uninviting Siddhartha
-#print(f"I am sorry {uninvited_guests}, {oops_message}")
-#print(guests)
+print("I'm sorry " + uninvited_guests.title() + ", our new table hasn't arrive yet and we will \
+only have space for two guests.")
 
-# Updating remaining guests that they are still invited
-#print(f"Dear {guests[0]}, I am pleased to tell you that we still have a seat for you at tonights event.")
-#print(f"Dear {guests[1]}, I am pleased to tell you that we still have a seat for you at tonights event.")
+#	Updating remaining guests that they are still invited
+print("Dear " + guests[0].title() + ", We have room for you tonight. See you there!")
+print("Dear " + guests[1].title() + ", We have room for you tonight. See you there!")
 
-# Removing the remaining guests wiht del per instructions. Then printing out to ensure the list is empty. 
-#Running this twice since I dont know how to do loops yet. 
+#	Removing the remaining guests wiht del per instructions. Then printing out to ensure the list 
+#	is empty. 
 del guests[0]
 del guests[0]
 print guests
