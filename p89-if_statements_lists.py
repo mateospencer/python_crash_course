@@ -74,3 +74,26 @@ for new_user in new_users:
 		print("Sorry, the username '" + new_user + "' is unavailable. Please enter a new username.")
 	else:
 		print("The username '" + new_user + "' is avaiable. Thank you for your registering.")
+
+
+#	Section 5-11: Ordinal Numbers
+#	Ordinal numbers indicate their position in a list, such as 1st or 2nd. Most ordinal numbers end
+#		in th, expect 1, 2, and 3. 
+#	* Store the numbers 1 through 9 in a list.
+#	* Loop through the list
+#	* Use an if-elif-else chain inside the loop to print the proper ordinal ending for each number.
+#		Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on 
+#		a separate line.
+
+list = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+
+for number in list:
+	if number == '1':
+		print("1st")
+		#If the goal was to append the ending on every value, could use print(list[0] + "st").
+	elif number == '2':
+		print("2nd")
+	elif number == '3':
+		print("3rd")
+	else:
+		print(number + "th")
