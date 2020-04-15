@@ -63,8 +63,7 @@ print(locations)
 #	I switched up the exercise to use 3-8 instead of 3-4 thru 3-7 as directed. Did this to stay
 #		related to code already here.
 #	Use len() to print a message indicating the number of people you are inviting to dinner. 
-print(f"There are " + {len(locations)} + " locations in my travel bucket list.")
-
+print("There are " + str((len(locations))) + " locations in my travel bucket list.")
 
 #	Section 3-10: Every Function
 #	Think of something you could store in a list. Write a program that creates a list containing
@@ -73,10 +72,20 @@ print(f"There are " + {len(locations)} + " locations in my travel bucket list.")
 #	States where I've lived
 states = ["West Virginia", "Maryland", "Virginia", "Wisconsin", "Pennslyvania"]
 
-print("I have lived in " + {len(states)} + " states of the United States.")
-print("States where I lived in, listed only in the order that I originally typed them:" + {states})
-print("The states where I have lived in alphabetical order:" + {sorted(states)})
-print("The states where I lived in reverse alphabetical order:" + {sorted(states, reverse=True)})
+print("I have lived in " + str((len(states))) + " states of the United States.")
+
+print("Original Order")
+for state in states:
+	print("I have lived in " + state)
+
+print("Alphabetical Order")
+for state in sorted(states):
+	print("I have lived in " + state)
+
+print("Reverse Order")
+for state in sorted(states, reverse=True):
+	print("I have lived in " + state)
+
 # Changing the original list to be permanently alphabetical.
 states.sort()
 print(states)
