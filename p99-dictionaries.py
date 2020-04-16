@@ -27,3 +27,22 @@ print("Lisa's favorite number is " + fav_numbers['Lisa'] + ".")
 print("Matt's favorite number is " + fav_numbers['Matt'] + ".")
 print("Kelen's favorite number is " + fav_numbers['Kelen'] + ".")
 
+
+#	Section 6-3: Glossary
+#	A Python dictionary can be used to model an actual dictionary. However, to avoid confusion let's
+#		call it a glossary. 
+#	* Think of five programming words you've learned about in the previous chapters. Use three words
+#		 at the keys in your glossary, and store their meanins as values. 
+#	* Print each word and its meaning as neatly formatted output. You might print the word followed 
+#		by a colon and then its meaning, or print the word on one line and then print tis meaning 
+#		indented on a second line. Use the newline character (\n) to insert a blank line between
+#		each word-meaning pair in your output. 
+
+glossary = {'dictionary': "a collection of key-value pairs.",
+			'string': "a series of characters.",
+			'method': "an action performed ona  piece of data.",
+			}
+
+print("A sictionary is " + glossary['dictionary'])
+print("A string is " + glossary['string'])
+print("A method is " + glossary['method'])
