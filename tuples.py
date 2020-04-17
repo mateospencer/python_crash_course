@@ -28,19 +28,24 @@
 #	Section 4-13: Buffet
 #	A buffet-style restaurant offers only five basic foods. Think of five simple foods, and store 
 #	them in a tuple. 
+#	*	Use a for loop to print each food the restaurant offers.
+#	*	Try to modify one of the items, and make sure that Python rejects the change. 
+#	*	The restaurant changes its menu, replacing two of the items with different foods. Add a line 
+#	that rewrites the tuple, and then use a for loop to print each of the items on the revised 
+#	menu. 
 
 buffet_foods = ("crab legs", "rice", "lo mein", "shrimp", "soup")
 
-#	Q1 Print each item in for loop
+#	Print each item in for loop
 for food in buffet_foods:
 	print(food)
 
-#	Q2 Try to modify one of the items and make sure Python rejects change
+#	Modify one of the items and make sure Python rejects change
 # 	Commented out so rest of code runs ok afterwards.
 # 	buffet_foods[0] = "sauteed beans"
 
-# Q3 Add a line that rewrites the tuple to replace two items with different foods and then uses a
-# for loop to print each of the items on a revised menu.
+#	Adding a line that rewrites the tuple to replace two items with different foods and then uses a
+# 	for loop to print each of the items on a revised menu.
 
 buffet_foods = ("crab legs", "fried rice", "bao", "shrimp", "soup")
 for food in buffet_foods:
