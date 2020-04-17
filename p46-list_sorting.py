@@ -3,21 +3,21 @@
 
 #	Section 3-8: Seeing the World
 #	Think of at least five places int he world you'd like to visit. 
-#	* Store the locations in a list. Make sure the list is not in alphabetical order.
-#	* Print your list in its original order. Don't worry about printing the list neatly, just print
+#	*	Store the locations in a list. Make sure the list is not in alphabetical order.
+#	* 	Print your list in its original order. Don't worry about printing the list neatly, just print
 #		it as a raw Python list. 
-#	* Use sorted() to print your list in alphabetical order without modifying the actual list.
-#	* Show that your list is still in its original order by printing it. 
-#	* Use sorted() to print your list in reverse alphabetical order without changing the order of
+#	* 	Use sorted() to print your list in alphabetical order without modifying the actual list.
+#	* 	Show that your list is still in its original order by printing it. 
+#	* 	Use sorted() to print your list in reverse alphabetical order without changing the order of
 #		the original list. 
-#	* Show that your list is still in its original order by printing it again. 
-#	* Use reverse() to change the order of your list. Print the list to show that its order has 
+#	* 	Show that your list is still in its original order by printing it again. 
+#	* 	Use reverse() to change the order of your list. Print the list to show that its order has 
 #		changed. 
-#	* Use reverse() to change the order of your list again. Print the list to show it's back to its 
+#	* 	Use reverse() to change the order of your list again. Print the list to show it's back to its 
 #		original order
-#	* Use sort() to change your list so it's stored in alphabetical order. Print the list to show
+#	* 	Use sort() to change your list so it's stored in alphabetical order. Print the list to show
 #		that its order has been changed. 
-#	* Use sort() to change your list so it's stored in reverse alphabetical order. Print the list to
+#	* 	Use sort() to change your list so it's stored in reverse alphabetical order. Print the list to
 #	 	show that its order has changed."
 
 
@@ -40,9 +40,9 @@ print(sorted(locations, reverse=True))
 print(locations)
 
 #	Using reverse to change the original order then printing to show the change. Worth remembering 
-#		here the difference b/t functions and methods. Methods alter object states. Functions 
-#		operate on them and return something. So things like sort() and reverse() are methods and 
-#		sorted() is a function.
+#	here the difference b/t functions and methods. Methods alter object states. Functions 
+#	operate on them and return something. So things like sort() and reverse() are methods and 
+#	sorted() is a function.
 locations.reverse()
 print(locations)
 
@@ -61,13 +61,13 @@ print(locations)
 
 #	Section 3-9: Dinner Guests
 #	I switched up the exercise to use 3-8 instead of 3-4 thru 3-7 as directed. Did this to stay
-#		related to code already here.
+#	related to code already here.
 #	Use len() to print a message indicating the number of people you are inviting to dinner. 
 print("There are " + str((len(locations))) + " locations in my travel bucket list.")
 
 #	Section 3-10: Every Function
 #	Think of something you could store in a list. Write a program that creates a list containing
-#		these items and then uses each function introduced in this chapter at least once. 
+#	these items and then uses each function introduced in this chapter at least once. 
 
 #	States where I've lived
 states = ["West Virginia", "Maryland", "Virginia", "Wisconsin", "Pennslyvania"]
@@ -86,6 +86,6 @@ print("Reverse Order")
 for state in sorted(states, reverse=True):
 	print("I have lived in " + state)
 
-# Changing the original list to be permanently alphabetical.
+#	Changing the original list to be permanently alphabetical.
 states.sort()
 print(states)
