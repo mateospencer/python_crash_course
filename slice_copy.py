@@ -1,4 +1,5 @@
-# 4-11
+#page 65.  
+#4-11
 
 pizzas = ["pepperoni", "sausage", "margherita", "veggie", "hawaiian"]
 friend_pizzas = pizzas[:]
