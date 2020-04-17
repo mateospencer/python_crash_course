@@ -1,3 +1,4 @@
+# page 65
 # 4-10 Slices
 numbers = list(range(1, 21))
 # Print first three
