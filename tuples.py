@@ -1,3 +1,6 @@
+#	Python Crash Course 2nd Edition
+#	Page 68 (Tuples))
+
 # Tuples
 # Values that dont change are called immutables. Immutable lists are called Tuples. 
 # 
@@ -22,16 +25,19 @@
 #
 # would print just fine. 
 
-# 4-13: Buffet
+#	Section 4-13: Buffet
+#	A buffet-style restaurant offers only five basic foods. Think of five simple foods, and store 
+#	them in a tuple. 
+
 buffet_foods = ("crab legs", "rice", "lo mein", "shrimp", "soup")
 
-# Q1 Print each item in for loop
+#	Q1 Print each item in for loop
 for food in buffet_foods:
 	print(food)
 
-# Q2 Try to modify one of the items and make sure Python rejects change
-# Commented out so rest of code runs ok afterwards.
-# buffet_foods[0] = "sauteed beans"
+#	Q2 Try to modify one of the items and make sure Python rejects change
+# 	Commented out so rest of code runs ok afterwards.
+# 	buffet_foods[0] = "sauteed beans"
 
 # Q3 Add a line that rewrites the tuple to replace two items with different foods and then uses a
 # for loop to print each of the items on a revised menu.
