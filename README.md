@@ -5,3 +5,4 @@ Note:
 * Some code may be duplicated as data is altered later. 
 * Some code will be inefficient because it follows what has been learned up to that point in the book. 
 * Code is excessively commented. This is because this code doubles as notes for me to refer back to or to help me with jumping back and forth between concepts. I will try to stick to PEP-8 conventions as much as possible and will update formatting as I learn it. 
+* Any feedback is welcome. 
