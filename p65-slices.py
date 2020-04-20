@@ -19,8 +19,8 @@ for bird in birds[:3]:
 	print(bird.title())
 
 #	Print middle three
-#	Print middle three (theres probably a better way of doing this than manually calculating the 
-#	three middle numbers in the range)
+#	Theres probably a better way of doing this than manually calculating the 
+#	three middle numbers in the range.
 print("The middle three items in this list are:")
 for bird in birds[1:4]:
 	print(bird.title())
@@ -40,30 +40,38 @@ for bird in birds[-3:]:
 #		and then use a for loop to print the second list. Make sure each new pizza is stored in the 
 #		approprpiate list. 
 
-pizzas = ["pepperoni", "sausage", "margherita", "veggie", "hawaiian"]
+#	Code from Exercise 4-1
+pizzas = ["pepperoni", "sausage", "margherita", "veggie", "hawaiian, "]
+
+#	Copying the list of pizzas from 4-1
 friend_pizzas = pizzas[:]
 
+#	Adding a new pizza to the original list
 pizzas.append('meat lovers')
+
+#	Adding a pizza to the ist friend_pizzas
 friend_pizzas.append('buffalo chicken')
 
-for pizza in pizzas:
-	print(f"I like {pizza} pizza.")
-
-print(f"My favorite pizzas are: ")
+#	Printing my favorite pizzas
+print("My favorite pizzas are: ")
 for pizza in pizzas:
 	print(pizza)
 
-print(f"My friend's favorite pizzas are: ")
+#	Printing friend's favorite pizzas
+print("My friend's favorite pizzas are: ")
 for friend_pizza in friend_pizzas:
 	print(friend_pizza)
 
 
+#	Section 4-12: More Loops
+#	All versions of foods.py in this section have avoided using for loops when printing to save
+#	space. Choose a version of foods.py, and write two for loops to print each list of foods. 
 
-# 4-12
 my_foods = ['sushi', 'hopia baboy', 'xiao long bao', 'pho', 'korean bbq']
 lisa_foods = ['sushi', 'pho', 'daikon soup', 'seaweed salad', 'ramen']
 
 for my_food in my_foods:
 	print(my_food)
+
 for lisa_food in lisa_foods:
 	print(lisa_food)
