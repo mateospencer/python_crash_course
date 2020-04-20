@@ -11,14 +11,21 @@
 #	*	Print the message The last three items in the list are:. Use a slice to print the last three
 #		items in the list. 
 
-numbers = list(range(1, 21))
-#	Print first three
+birds = ["tui", "fantail", "kakapo", "kiwi", "kaka"]
 
-print(f"The first three numbers are {numbers[0:3]}")
+#	Print first three
+print("The first three items in the list are:")
+for bird in birds[:3]:
+	print(bird.title())
+
+#	Print middle three
 #	Print middle three (theres probably a better way of doing this than manually calculating the 
 #	three middle numbers in the range)
-
-print(f"The three middle numbers are {numbers[9:12]}")
+print("The middle three items in this list are:")
+for bird in birds[1:4]:
+	print(bird.title())
 
 #	Print last three
-print(f"The last three numbers are {numbers[-3:]}")
+print("The last three items in this list are:")
+for bird in birds[-3:]:
+	print(bird.title())
