@@ -43,6 +43,6 @@ glossary = {'dictionary': "a collection of key-value pairs.",
 			'method': "an action performed ona  piece of data.",
 			}
 
-print("A sictionary is " + glossary['dictionary'])
+print("A dictionary is " + glossary['dictionary'])
 print("A string is " + glossary['string'])
 print("A method is " + glossary['method'])
