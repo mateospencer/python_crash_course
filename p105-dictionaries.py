@@ -32,7 +32,7 @@ for term in glossary.keys():
 
 rivers = {'whanganui': 'aotearoa',
 			'cacapon': 'america',
-			'monongahela': 'america'
+			'monongahela': 'america',
 			}
 
 for river in rivers.keys():
@@ -57,4 +57,16 @@ for country in set(rivers.values()):
 #		poll, print a message thanking them for responding. If they have not yet taken the poll, 
 #		print a message inviting them to take the poll. 
 
+favorite_languages = {
+	'jen': 'python',
+	'sarah': 'c',
+	'edward': 'ruby',
+	'phil': 'python',}
 
+people = {'kelen', 'lisa', 'jen', 'sarah', 'bella', 'sid'}
+
+for person in people:
+	if person in favorite_languages.keys():
+		print(person.title() + ", thank you for responding to the poll.")
+	else: 
+		print(person.title() + ", you are invited to take our favorite dev language poll.")
