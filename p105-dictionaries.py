@@ -10,7 +10,7 @@
 
 glossary = {'dictionary': "a collection of key-value pairs.",
 			'string': "a series of characters.",
-			'method': "an action performed ona  piece of data.",
+			'method': "an action performed on a piece of data.",
 			'key value pair': "a set of values associated with each other.",
 			'pop()': "a method that removes the last item in a list.",
 			'append()': "a method that adds a new element to the end of a list.",
@@ -30,7 +30,23 @@ for term in glossary.keys():
 #	*	Use a loop to print the name of each river included in the dictionary. 
 #	*	Use a loop to print the name of each country included in the dictionary. 
 
-rivers = {''}
+rivers = {'whanganui': 'aotearoa',
+			'cacapon': 'america',
+			'monongahela': 'america'
+			}
+
+for river in rivers.keys():
+	country = rivers[river]
+	print("The " + river.title() + " River runs through " + country.title() + ".")
+
+print("The rivers in the list are:")
+for river in rivers.keys():
+	print(river.title())
+
+#	Using set here removes duplicate listings. 
+print("The countries in the list are:")
+for country in set(rivers.values()):
+	print(country.title())
 
 
 #	Section 6-6: Polling
