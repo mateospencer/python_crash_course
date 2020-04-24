@@ -17,3 +17,10 @@ for person in people:
 	print("\nFull Name: " + person['first_name'] + " " + person['last_name'])
 	print("Age: " + person['age'])
 	print("City: " + person['city'])
+
+
+#	Section 6-8: Pets
+#	Make several dictionaries, where each dictionary respresents a differentpet. In each dictionary,
+#	include the kind of animal and the owner's name. Store these dictionaries in a list called pets.
+#	Next, loop through your list and as you do, print everything you know about each pet. 
+
