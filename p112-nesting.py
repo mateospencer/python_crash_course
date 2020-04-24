@@ -24,3 +24,14 @@ for person in people:
 #	include the kind of animal and the owner's name. Store these dictionaries in a list called pets.
 #	Next, loop through your list and as you do, print everything you know about each pet. 
 
+pet_0 = {'type': 'dog', 'pet_name': 'Bo', 'owner': 'Barack',}
+pet_1 = {'type': 'cat', 'pet_name': 'Socks', 'owner': 'Chelsea',}
+pet_2 = {'type': 'dog', 'pet_name': 'Sunny', 'owner': 'Michelle',}
+
+pets = [pet_0, pet_1, pet_2]
+
+print("\nPresidential Pets")
+for pet in pets:
+	print("Pet Name: " + pet['pet_name'])
+	print("Animal Type: " + pet['type'])
+	print("Owner: " + pet['owner'] + "\n")
