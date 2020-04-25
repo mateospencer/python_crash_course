@@ -20,9 +20,10 @@ for person in people:
 
 
 #	Section 6-8: Pets
-#	Make several dictionaries, where each dictionary respresents a differentpet. In each dictionary,
-#	include the kind of animal and the owner's name. Store these dictionaries in a list called pets.
-#	Next, loop through your list and as you do, print everything you know about each pet. 
+#	Make several dictionaries, where each dictionary respresents a different pet. In each
+#	dictionary include the kind of animal and the owner's name. Store these dictionaries in a list 
+#	called pets. Next, loop through your list and as you do, print everything you know about each 
+#	pet. 
 
 pet_0 = {'type': 'dog', 'pet_name': 'Bo', 'owner': 'Barack',}
 pet_1 = {'type': 'cat', 'pet_name': 'Socks', 'owner': 'Chelsea',}
@@ -42,3 +43,14 @@ for pet in pets:
 #	and store one to three favorite places for each person. To make this exercise a bit more
 #	interesting, ask some friends to name a few of their favorite places. Loop through the
 #	dictionary, and print each person's name and their favorite places. 
+
+favorite_places = {
+	'matt': ['maui', 'new zealand',],
+	'kelen': ['jamaica', 'miami',],
+	'awori': ['kenya', 'ireland', 'paris',],
+	}
+
+for name, places in favorite_places.items():
+	print(f"\n{name.title()}'s favorite places are:")
+	for place in places:
+		print(f"\t{place.title()}")
