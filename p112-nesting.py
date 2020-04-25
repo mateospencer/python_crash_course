@@ -54,3 +54,10 @@ for name, places in favorite_places.items():
 	print(f"\n{name.title()}'s favorite places are:")
 	for place in places:
 		print(f"\t{place.title()}")
+
+
+#	Section 6-10: Favorite Numbers
+#	Modify our program from Exercise 6-2 (page 99) so each person can have more than one favorite
+#	number. Then print each person's name along with their favorite number. 
+
+		
