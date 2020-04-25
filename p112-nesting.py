@@ -60,4 +60,15 @@ for name, places in favorite_places.items():
 #	Modify our program from Exercise 6-2 (page 99) so each person can have more than one favorite
 #	number. Then print each person's name along with their favorite number. 
 
-		
+fav_numbers = {
+	'Bella': ['5','3'], 
+	'Sid': ['2', '1',], 
+	'Lisa': ['6', '7',],
+	'Matt': ['11','7',], 
+	'Kelen': ['14','23',],
+	}
+
+for person, numbers in fav_numbers.items():
+	print(f"\n{person.title()}'s favorite numbers are:")
+	for number in numbers:
+		print(f"\t{number}") 	
