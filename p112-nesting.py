@@ -63,8 +63,8 @@ for name, places in favorite_places.items():
 fav_numbers = {
 	'Bella': ['5','3'], 
 	'Sid': ['2', '1',], 
-	'Lisa': ['6', '7',],
-	'Matt': ['11','7',], 
+	'Lisa': ['2', '7',],
+	'Matt': ['7','8',], 
 	'Kelen': ['14','23',],
 	}
 
@@ -82,9 +82,28 @@ for person, numbers in fav_numbers.items():
 #	the information you have stored about it. 
 
 cities = {
-	'Wellington' {
-		'country': 'New Zealand'
-	}
-	'Toronto'
-	'Morgantown'
+	'Wellington': {
+		'country': 'New Zealand',
+		'population': '212700',
+		'fact':'Home of Te Papa Museum',
+		},
+	'Toronto': {
+		'country': 'Canada',
+		'population': '2930000',
+		'fact': 'Home of the CN Tower',
+		},
+	'Morgantown': {
+		'country': 'United States',
+		'population': '30955',
+		'fact': 'Home of West Virginia University',
+		},
 }
+
+for city, places in cities.items():
+	country = places['country'].title()
+	population = places['population']
+	fact = places['fact']
+	print(f"\n{city.title()} facts:")
+	print("Country: " + country)
+	print("Population: " + population)
+	print("Fact: " + fact)
