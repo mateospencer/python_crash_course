@@ -81,3 +81,10 @@ for person, numbers in fav_numbers.items():
 #	should be something like country, population, and fact. Print the name of each city and all of
 #	the information you have stored about it. 
 
+cities = {
+	'Wellington' {
+		'country': 'New Zealand'
+	}
+	'Toronto'
+	'Morgantown'
+}
