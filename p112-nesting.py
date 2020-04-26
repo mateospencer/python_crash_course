@@ -113,3 +113,30 @@ for city, places in cities.items():
 #	We're now working with examples that are complex enough that they can be extended in any number
 #	of ways. use one of the example programs from this chapter, and extend it by adding new keys
 #	and values, changing the context of the program or improving the formatting of the output. 
+
+favorite_trips = {
+	'Lisa': {
+		'trip1': 'Kiawah Island, South Carolina',
+		'trip2': 'Kauai Island, Hawaii',
+		'trip3': 'Boracay, Philippines',
+		},
+	'Matt': {
+		'trip1': 'Maui Island, Hawaii',
+		'trip2': 'Wellington, New Zealand',
+		'trip3': 'Puerto Vallarta, Mexico',
+		},
+	'Kelen': {
+		'trip1': 'Montego Bay, Jamaica',
+		'trip2': 'Miami, Florida',
+		'trip3': 'Pittsburgh, Pennslyvania',
+		},
+	}
+
+for name, trip in favorite_trips.items():
+	print(f"\n{name.title()}'s favorite trips are:")
+	location1 = trip['trip1']
+	location2 = trip['trip2']
+	location3 = trip['trip3']
+	print(location1)
+	print(location2)
+	print(location3)
