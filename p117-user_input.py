@@ -23,3 +23,7 @@ if dinner_group > 8:
 	print("I'm sorry. You will have to wait for a table.")
 else:
 	print(f"\nYour table for {dinner_group} guests is ready.")
+
+
+#	Section 7-3: Multiples of Ten
+#	Ask the user for a number, and then report whether the number is a multiple of 10 or not. 
