@@ -107,3 +107,9 @@ for city, places in cities.items():
 	print("Country: " + country)
 	print("Population: " + population)
 	print("Fact: " + fact)
+
+
+#	Section 6-12: Extensions: 
+#	We're now working with examples that are complex enough that they can be extended in any number
+#	of ways. use one of the example programs from this chapter, and extend it by adding new keys
+#	and values, changing the context of the program or improving the formatting of the output. 
