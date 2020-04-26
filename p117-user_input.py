@@ -16,3 +16,10 @@ print(f"\nI'll see if we have a {car_choice} available.")
 #	Write a program that asks the user how many people are in their dinner group. If the answer is
 #	more than eight, print a message saying they'll have to wait for a table. Otherwise, report that
 #	their table is ready. 
+
+dinner_group = input("\nHow many people are in your dinner group? ")
+dinner_group = int(dinner_group)
+if dinner_group > 8:
+	print("I'm sorry. You will have to wait for a table.")
+else:
+	print(f"\nYour table for {dinner_group} guests is ready.")
