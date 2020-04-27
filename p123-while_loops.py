@@ -23,3 +23,20 @@ while True:
 #	under the age of 3, the ticket is free; if they are between 3 and 12, the ticket is $10; and
 #	if they are over age 12, the ticket is $15. Write a loop in which you ask users their age, and
 #	then tell them the cost of their movie ticket. 
+
+prompt = "\nEnter your age and I will calculate your movie ticket price."
+prompt += "\n(Enter 'quit' when you are finished.)"
+
+age = ""
+while True:
+	age = input(prompt)
+	if age == 'quit':
+		break
+	age = int(age)
+	if age >= 3 and age <=12:
+		print("$10")
+	if age > 12:
+		print("$15")
+	if age <3:
+		print("$0")
+
