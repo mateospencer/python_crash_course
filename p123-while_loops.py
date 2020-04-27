@@ -1,5 +1,5 @@
 #	Python Crash Course 2nd Edition
-#	Page 123 (While Loops)
+#	Page 123-124 (While Loops)
 
 #	Section 7-4: Pizza Toppings
 #	Write a loop that prompts the user to enter a series of pizza toppings until they enter a 'quit'
@@ -78,3 +78,13 @@ while True:
 		break
 	else:
 		print(f"I'll add [toppings] your pizza.")
+
+
+#	Section 7-7: Infinity
+#	Write a loop that never ends, and run it. (To end the loop, press CTRL-C or close the window
+#	displaying the output.)
+
+current_number = 1
+while current_number >= 1:
+	print(current_number)
+	current_number += 1
