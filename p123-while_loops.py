@@ -48,3 +48,14 @@ while True:
 #	*	Use an active variable to control how long the loop runs. 
 #	*	Use a break statement to exit the loop when the user enters a 'quit' value.
 
+prompt = "\nEnter your choice of pizza toppings:"
+prompt += "\n(Enter 'quit' when you are finished.)"
+
+active = True:
+while active:
+	topping = input(prompt)
+
+	if topping == 'quit':
+		active = False
+	else:
+		print(f"I'll add [topping] your pizza.")
