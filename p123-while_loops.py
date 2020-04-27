@@ -84,7 +84,7 @@ while True:
 #	Write a loop that never ends, and run it. (To end the loop, press CTRL-C or close the window
 #	displaying the output.)
 
-current_number = 1
-while current_number >= 1:
-	print(current_number)
-	current_number += 1
+#current_number = 1
+#while current_number >= 1:
+#	print(current_number)
+#	current_number += 1
