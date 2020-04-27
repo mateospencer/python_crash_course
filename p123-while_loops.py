@@ -51,11 +51,30 @@ while True:
 prompt = "\nEnter your choice of pizza toppings:"
 prompt += "\n(Enter 'quit' when you are finished.)"
 
-active = True:
-while active:
-	topping = input(prompt)
+#	Conditional Test
+toppings = ""
+while toppings != 'quit':
+	toppings = input(prompt)
 
-	if topping == 'quit':
+	if toppings != 'quit':
+		print(f"I'll add [toppings] your pizza.")
+
+
+#	Active Variable to Control Loops
+active = True
+while active:
+	toppings = input(prompt)
+
+	if toppings == 'quit':
 		active = False
 	else:
-		print(f"I'll add [topping] your pizza.")
+		print(f"I'll add [toppings] your pizza.")
+
+#	Break Statement
+while True:
+	toppings = input(prompt)
+
+	if toppings == 'quit':
+		break
+	else:
+		print(f"I'll add [toppings] your pizza.")
