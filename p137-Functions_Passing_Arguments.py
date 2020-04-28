@@ -7,3 +7,13 @@
 #	and the message printed on it. 
 #	Call the funciton once using positional arguments to make a shirt. Call the function a second
 #	time using keyword arguments. 
+
+def make_shirt(size, text):
+	"""Accepts a size and text of a message to print on a shirt."""
+	print(f"\nThe size of the shirt is {size} and the printed text reads: {text}.")
+
+#	Calling function with positional arguments
+make_shirt('XL', 'supreme')
+
+#	Calling functon using keyword arguments
+make_shirt(text='All Blacks Rugby', size='large')
