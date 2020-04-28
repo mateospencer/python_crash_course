@@ -17,3 +17,9 @@ make_shirt('XL', 'supreme')
 
 #	Calling functon using keyword arguments
 make_shirt(text='All Blacks Rugby', size='large')
+
+
+#	Section 8-4: Large Shirts
+#	Modify the make_shirt() function so that shirts are large by default witha message that reads
+#	I love Python. Make a large shirt and a medium shirt with the default message, and a shirt of
+#	size with a different message.
