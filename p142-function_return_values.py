@@ -55,4 +55,23 @@ print(album4)
 #	input and print the dictionary that's created. Be sure to include a quit value in the while
 #	loop. 
 
+def make_album(artist_name, album_title, tracks=None):
+	"""Returns neatly formatted information about a music album"""
+	album = {'artist': artist_name, 'album': album_title}
+	if tracks:
+		album['tracks'] = tracks
+	return album
 
+while True:
+	print("\nEnter an artist's name:")
+	print("(enter 'q' at any time to quit)")
+
+	musician = input("Artist's name: ")
+	if musician == 'q':
+		break
+	record = input("Album Name: ")
+	if record == 'q':
+		break
+
+	make_album = make_album(musician, record)
+	print(f"\n {make_album}")
