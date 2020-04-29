@@ -43,3 +43,9 @@ print(unsent_messages)
 
 print("The following messages were successfuly sent:")
 print(sent_messages)
+
+
+#	Section 8-11: Archived Messages
+#	Start with your work from Exercise 8-10. Call the function send_messages() with a copy of the 
+#	list of messages. After calling the function, print both of your lists to show that hte original
+#	list retained its messages. 
