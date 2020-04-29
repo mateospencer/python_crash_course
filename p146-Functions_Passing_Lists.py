@@ -47,5 +47,29 @@ print(sent_messages)
 
 #	Section 8-11: Archived Messages
 #	Start with your work from Exercise 8-10. Call the function send_messages() with a copy of the 
-#	list of messages. After calling the function, print both of your lists to show that hte original
+#	list of messages. After calling the function, print both of your lists to show that the original
 #	list retained its messages. 
+
+def show_messages(unsent_messages):
+	"""Prints messages from a list of messages"""
+	for message in unsent_messages:
+		print(message)
+
+def send_messages(unsent_messages, sent_messages):
+	"""Simulates sending a message and moving it from an unsent list to sent list."""
+	while unsent_messages:
+		current_message = unsent_messages.pop()
+		print(current_message)
+		sent_messages.append(current_message)
+
+unsent_messages = ["On my way!", "No worries.", "I love you.", "Take care."]
+sent_messages = []
+
+show_messages(unsent_messages)
+send_messages(unsent_messages[:], sent_messages)
+
+print("The original list of messages to send:")
+print(unsent_messages)
+
+print("The following messages were successfuly sent:")
+print(sent_messages)
