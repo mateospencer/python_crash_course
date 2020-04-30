@@ -38,3 +38,11 @@ print(user_profile)
 #	as a color or an option feature. Your function should work for a call like this one:
 #		car = make_car('subaru', 'outback', color='blue', tow_package=True)
 #	Print the dictionary that's returned to make sure all the information was stored correctly. 
+
+def cars(make, model, **car_info):
+	return car_info
+	car_info['manufacturer'] = make
+	car_info['model_name'] = model
+car_details = cars('Tesla', 'Model S', color='Black', package='Long Range')
+
+print(car_details)
