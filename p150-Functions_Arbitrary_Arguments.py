@@ -55,6 +55,6 @@ def cars(make, model, **options):
 #	car_info['manufacturer'] = make
 #	car_info['model_name'] = model
 
-car_info = cars('Tesla', 'Model S', color='Black', package='Long Range')
-print(car_info)
+Tesla = cars('Tesla', 'Model S', color='Black', package='Long Range')
+print(Tesla)
 
