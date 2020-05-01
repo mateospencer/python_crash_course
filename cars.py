@@ -1,4 +1,8 @@
-def car_models(make, model, **car_info):
-	return car_info
-	car_info['manufacturer'] = make
-	car_info['model_name'] = model
+def cars(make, model, **options):
+	car_dict = {
+		'make': make.title(),
+		'model': model.title(),
+		}
+	for option, value in options.items():
+		car_dict[option] = value
+	return car_dict
