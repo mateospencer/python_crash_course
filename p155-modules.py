@@ -27,3 +27,6 @@ pf.show_completed_models(completed_models)
 #		*	from module_name import function_name as fn
 #		*	import module_name as mn
 #		*	from module_name import *
+
+import cars
+cars.car_models('Tesla', 'Model S', color='Black', package='Long Range')

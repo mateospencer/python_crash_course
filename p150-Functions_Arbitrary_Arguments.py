@@ -39,10 +39,19 @@ print(user_profile)
 #		car = make_car('subaru', 'outback', color='blue', tow_package=True)
 #	Print the dictionary that's returned to make sure all the information was stored correctly. 
 
-def cars(make, model, **car_info):
-	return car_info
-	car_info['manufacturer'] = make
-	car_info['model_name'] = model
-car_details = cars('Tesla', 'Model S', color='Black', package='Long Range')
+def cars(make, model, **options):
+	car_dict = {
+		'make': make.title(),
+		'model': model.title(),
+		}
+	for option, value in options.items():
+		car_dict[option] = value
+	return car_dict
 
-print(car_details)
+#	Had previously written this, this way. This technically works but when importing, would not
+#	pick up make, model without calling them make=this, model=that. 
+#def car_models(make, model, **car_info):
+#	return car_info
+#	car_info['manufacturer'] = make
+#	car_info['model_name'] = model
+
