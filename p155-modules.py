@@ -29,5 +29,5 @@ pf.show_completed_models(completed_models)
 #		*	from module_name import *
 
 import cars
-Tesla = cars('Tesla', 'Model S', color='Black', package='Long Range')
-print(Tesla)
+tesla = cars.car_info('Tesla', 'Model S', color='Black', package='Long Range')
+print(tesla)
