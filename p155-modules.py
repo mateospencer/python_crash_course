@@ -31,3 +31,8 @@ pf.show_completed_models(completed_models)
 import cars
 tesla = cars.car_info('Tesla', 'Model S', color='Black', package='Long Range')
 print(tesla)
+
+from cars import car_info
+polestar = car_info('Polestar', '1', color='Silver', package='Performance')
+print(polestar)
+
