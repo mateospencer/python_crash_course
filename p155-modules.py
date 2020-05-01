@@ -36,3 +36,7 @@ from cars import car_info
 polestar = car_info('Polestar', '1', color='Silver', package='Performance')
 print(polestar)
 
+from cars import car_info as ci
+roadster = ci('Tesla', 'Roadster', color='Red', package='SpaceX')
+print(roadster)
+
