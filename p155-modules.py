@@ -44,4 +44,10 @@ import cars as c
 taycan = c.car_info('Porsche', 'Taycan', color='Silver', package='4S')
 print(taycan)
 
+from cars import car_info
+etron = car_info('Audi', 'e-Tron', color='Blue', package='A3')
+print(etron)
+
+
+
 
