@@ -1,4 +1,4 @@
-def cars(make, model, **options):
+def car_info(make, model, **options):
 	car_dict = {
 		'make': make.title(),
 		'model': model.title(),
