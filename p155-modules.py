@@ -6,6 +6,9 @@
 #	printing_functions.py. Write an import statement at the top of printing_models.py, and modify
 #	the file to use the imported functions. 
 
+#	Per instructions, I've created a printing_models.py and printing_functions.py. Also, placed
+#	code here to group it with the exercise. 
+
 import printing_functions as pf
 
 unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
