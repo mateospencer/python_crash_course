@@ -40,3 +40,8 @@ from cars import car_info as ci
 roadster = ci('Tesla', 'Roadster', color='Red', package='SpaceX')
 print(roadster)
 
+import cars as c
+taycan = c.car_info('Porsche', 'Taycan', color='Silver', package='4S')
+print(taycan)
+
+
