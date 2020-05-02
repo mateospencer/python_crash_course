@@ -32,3 +32,8 @@ print(restaurant1.cuisine_type)
 
 restaurant1.describe_restaurant()
 restaurant1.open_restaurant()
+
+
+#	Section 9-2: Three Restaurants
+#	Start with your class from Exercise 9-1. Create three different instances from the class, and 
+#	call describe_restaurant() for each instance. 
