@@ -37,3 +37,11 @@ restaurant1.open_restaurant()
 #	Section 9-2: Three Restaurants
 #	Start with your class from Exercise 9-1. Create three different instances from the class, and 
 #	call describe_restaurant() for each instance. 
+
+restaurant2 = Restaurant('Sikaku@Bubble', 'Boba Tea')
+restaurant3 = Restaurant('Kenyan Cafe', 'Kenyan')
+restaurant4 = Restaurant('Yama', 'Japanese')
+
+restaurant2.describe_restaurant()
+restaurant3.describe_restaurant()
+restaurant4.describe_restaurant()
