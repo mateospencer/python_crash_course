@@ -8,3 +8,27 @@
 #	a message indicating that the restaurant is open. 
 #	Make an instance called restaurant from your class. Print the two attributes individually, and
 #	then call both methods. 
+
+class Restaurant:
+	"""A simple class representing restaurant details"""
+	def __init__(self, restaurant_name, cuisine_type):
+		"""Initialize restaurant name and cuisine type attributes"""
+		self.restaurant_name = restaurant_name.title()
+		self.cuisine_type = cuisine_type
+
+	def describe_restaurant(self):
+		"""Prints info about the restaurant."""
+		details = f"{self.restaurant_name} is a {self.cuisine_type} restaurant."
+		print(f"\n{details}")
+
+	def open_restaurant(self):
+		"""Prints a message statin that the restaurant is open."""
+		open = f"{self.restaurant_name} is now open."
+		print(f"\n{open}")
+
+restaurant1 = Restaurant('Daikoku','Japanese')
+print(restaurant1.restaurant_name)
+print(restaurant1.cuisine_type)
+
+restaurant1.describe_restaurant()
+restaurant1.open_restaurant()
