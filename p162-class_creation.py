@@ -53,3 +53,29 @@ restaurant4.describe_restaurant()
 #	describe_user() that prints a summary of the user's information. Make another method called 
 #	greet_user() that prints a personalized greeting to the user. 
 #	Create several instances representing different users, and call both methods for each user. 
+
+class User:
+	"""A class for simulated user profile details"""
+	def __init__(self, first_name, last_name):
+		"""Initializing first and last name attributes"""
+		self.first_name = first_name.title()
+		self.last_name = last_name.title()
+
+	def describe_user(self):
+		user_details = f"User's Name: {self.first_name} {self.last_name}"
+		print(f"\n{user_details}")
+
+	def greet_user(self):
+		print(f"\nKia ora, {self.first_name}!")
+
+user1 = User('Rt Hon Jacinda', 'Ardern')
+user2 = User('Sir Edmund', 'Hillary')
+user3 = User('Tenzing', 'Norgay')
+
+user1.describe_user()
+user2.describe_user()
+user3.describe_user()
+
+user1.greet_user()
+user2.greet_user()
+user3.greet_user()
