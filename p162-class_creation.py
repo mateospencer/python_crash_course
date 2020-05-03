@@ -56,21 +56,24 @@ restaurant4.describe_restaurant()
 
 class User:
 	"""A class for simulated user profile details"""
-	def __init__(self, first_name, last_name):
-		"""Initializing first and last name attributes"""
+	def __init__(self, first_name, last_name, email, title):
+		"""Initializing attributes"""
 		self.first_name = first_name.title()
 		self.last_name = last_name.title()
+		self.email = email
+		self.title = title.title()
 
 	def describe_user(self):
-		user_details = f"User's Name: {self.first_name} {self.last_name}"
-		print(f"\n{user_details}")
+		print(f"User's Name: {self.first_name} {self.last_name}")
+		print(f"Email: {self.email}")
+		print(f"Title: {self.title}")
 
 	def greet_user(self):
 		print(f"\nKia ora, {self.first_name}!")
 
-user1 = User('Rt Hon Jacinda', 'Ardern')
-user2 = User('Sir Edmund', 'Hillary')
-user3 = User('Tenzing', 'Norgay')
+user1 = User('Rt Hon Jacinda', 'Ardern', 'jacinda@beehive.govt.nz', 'Prime Minister')
+user2 = User('Sir Edmund', 'Hillary', 'edmund@mountaintop.gov.nz', 'Explorer')
+user3 = User('Tenzing', 'Norgay', 'tenzing@mountaintop.gov.nz', 'Explorer')
 
 user1.describe_user()
 user2.describe_user()
