@@ -43,9 +43,15 @@ print(restaurant.number_served)
 restaurant.number_served = 314
 print(restaurant.number_served)
 
+restaurant.set_number_served(592)
+print(restaurant.number_served)
+
+restaurant.increment_number_served(65)
+print(restaurant.number_served)
+
 
 #	Section 9-5: Login Attempts
-#	Add an attribute called login_attempts to your User calss from Exercise 9-3 (page 162). Write a 
+#	Add an attribute called login_attempts to your User class from Exercise 9-3 (page 162). Write a 
 #	method called increment_login_attempts() that increments the value of login_attempts by 1. 
 #	Write another method called reset_login_attempts() that resets the value of login_attempts to 0.
 #	Make an instance of the User class  and call increment_login_attempts() several times. Print 
@@ -55,9 +61,10 @@ print(restaurant.number_served)
 class User:
 	"""A class for simulated user profile details"""
 	def __init__(self, first_name, last_name):
-		"""Initializing first and last name attributes"""
+		"""Initializing first and last name  and login attempt attributes"""
 		self.first_name = first_name.title()
 		self.last_name = last_name.title()
+		self.login_attempts = 0
 
 	def describe_user(self):
 		user_details = f"User's Name: {self.first_name} {self.last_name}"
@@ -65,9 +72,3 @@ class User:
 
 	def greet_user(self):
 		print(f"\nKia ora, {self.first_name}!")
-
-restaurant.set_number_served(592)
-print(restaurant.number_served)
-
-restaurant.increment_number_served(65)
-print(restaurant.number_served)
