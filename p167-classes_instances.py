@@ -28,3 +28,23 @@ class Restaurant:
 		"""Prints a message statin that the restaurant is open."""
 		open = f"{self.restaurant_name} is now open."
 		print(f"\n{open}")
+
+	def set_number_served(self, customer_count):
+		"""Allows updating the number of customers of the restaurant via a method"""
+		self.number_served = customer_count
+
+	def increment_number_served(self, additional_customers):
+		"""Enables incrementing the number of customers of the restaurant via a method"""
+		self.number_served += additional_customers
+
+restaurant = Restaurant('La Tapatia', 'Mexican')
+print(restaurant.number_served)
+
+restaurant.number_served = 314
+print(restaurant.number_served)
+
+restaurant.set_number_served(592)
+print(restaurant.number_served)
+
+restaurant.increment_number_served(65)
+print(restaurant.number_served)
