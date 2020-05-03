@@ -52,6 +52,20 @@ print(restaurant.number_served)
 #	the value of login_attempts to make sure it was incremented properly, and then call
 #	reset_login_attempts(). Print login_attempts again to make sure it was reset to 0. 
 
+class User:
+	"""A class for simulated user profile details"""
+	def __init__(self, first_name, last_name):
+		"""Initializing first and last name attributes"""
+		self.first_name = first_name.title()
+		self.last_name = last_name.title()
+
+	def describe_user(self):
+		user_details = f"User's Name: {self.first_name} {self.last_name}"
+		print(f"\n{user_details}")
+
+	def greet_user(self):
+		print(f"\nKia ora, {self.first_name}!")
+
 restaurant.set_number_served(592)
 print(restaurant.number_served)
 
