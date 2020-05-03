@@ -60,15 +60,42 @@ print(restaurant.number_served)
 
 class User:
 	"""A class for simulated user profile details"""
-	def __init__(self, first_name, last_name):
-		"""Initializing first and last name  and login attempt attributes"""
+	def __init__(self, first_name, last_name, email, title):
+		"""Initializing attributes"""
 		self.first_name = first_name.title()
 		self.last_name = last_name.title()
+		self.email = email
+		self.title = title.title()
 		self.login_attempts = 0
 
 	def describe_user(self):
-		user_details = f"User's Name: {self.first_name} {self.last_name}"
-		print(f"\n{user_details}")
+		print(f"User's Name: {self.first_name} {self.last_name}")
+		print(f"Email: {self.email}")
+		print(f"Title: {self.title}")
 
 	def greet_user(self):
+		"""Greets user by username"""
 		print(f"\nKia ora, {self.first_name}!")
+
+	def increment_login_attempts(self):
+		"""Enables incrementing the number of login attempts by the user via a method"""
+		self.login_attempts += 1
+
+	def reset_login_attempts(self):
+		"""Resets login attempts back to zero"""
+		self.login_attempts = 0
+
+user1 = User('Gold', 'Fish', 'gfish@angelfire.com', 'sharkbait')
+print(user1.login_attempts)
+
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+user1.increment_login_attempts()
+print(user1.login_attempts)
+
+user1.reset_login_attempts()
+print(user1.login_attempts)
