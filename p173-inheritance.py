@@ -33,3 +33,23 @@ class Restaurant:
 	def increment_number_served(self, additional_customers):
 		"""Enables incrementing the number of customers of the restaurant via a method"""
 		self.number_served += additional_customers
+
+class IceCreamStand(Restaurant):
+	"""Represents a Ice Cream Stand"""
+
+	def __init__(self, restaurant_name, cuisine_type='Ice Cream'):
+		"""Initialize attributes of parent class and those specific to Ice Cream Stands"""
+		super().__init__(restaurant_name, cuisine_type)
+		self.flavors = []
+
+	def display_flavors(self):
+		"""Displays the flavor of ice cream at the Ice Cream Stand"""
+		print("\nThe following ice cream flavors are available:")
+		for flavor in self.flavors:
+			print(f"{flavor.title()}")
+
+icecreamstand1 = IceCreamStand('The Hyppo')
+icecreamstand1.flavors = ['horchata', 'coffee', 'caramel', 'dulce de leche', 'thai tea']
+
+icecreamstand1.describe_restaurant()
+icecreamstand1.display_flavors()
