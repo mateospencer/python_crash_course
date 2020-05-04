@@ -36,7 +36,6 @@ class Restaurant:
 
 class IceCreamStand(Restaurant):
 	"""Represents a Ice Cream Stand"""
-
 	def __init__(self, restaurant_name, cuisine_type='Ice Cream'):
 		"""Initialize attributes of parent class and those specific to Ice Cream Stands"""
 		super().__init__(restaurant_name, cuisine_type)
@@ -98,37 +97,16 @@ class Admin(User):
 
 	def show_privileges(self):
 		"""Lists the administrator's set of privileges."""
-		print("\nThe Administrator has the following privileges:")
-		for privilege in self.privileges:
-			print(f"{privilege}")
+		print("\nPrivileges:")
+		if self.privileges:
+			for privilege in self.privileges:
+				print(f"- {privilege}")
+		else:
+			print("- This user has no privileges.")
 
 admin_user = Admin('Admin', 'Istrator', 'admin@website.co.nz', 'Admin')
 admin_user.privileges = ['create user', 'delete user', 'reset password', 'ban user']
 
 admin_user.describe_user()
 admin_user.show_privileges()
-
-
-#	Section 9-8: Privileges
-#	Write a separate Privileges class. The class should have one attribute, privileges, that stores
-#	a list of strings as described in Exercise 9-7. Move the show_privileges() method to this class.
-#	Make a Privileges instance as an attribute in the Admin class. Create a new instance of Admin 
-#	and use your method to show its privileges.
-
-class Privileges():
-	"""Privileges for each user account"""
-	def __init__(self, privileges=[]):
-		self.privileges = privileges
-
-	def show_privileges(self):
-		"""Lists the administrator's set of privileges."""
-		print("\nThe Administrator has the following privileges:")
-		for privilege in self.privileges:
-			print(f"{privilege}")
-
-admin2 = Admin('Admin', 'Istrator 2', 'admin2@website.co.nz', 'Admin2')
-admin2.privileges = ['backup volume', 'create volume', 'delete volume']
-
-admin2.describe_user()
-admin2.privileges.show_privileges()
 
