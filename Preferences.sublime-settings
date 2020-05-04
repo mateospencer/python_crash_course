@@ -3,4 +3,5 @@
 {
 	"rulers": [100],
 	"word_wrap": false,
+	"draw_white_space": "all"
 }
