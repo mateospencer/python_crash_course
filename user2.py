@@ -1,3 +1,8 @@
+#	Note: This is named user2.py because user.py which also contained User, Admin, and Privilege 
+#	methods was necessary for a previous exercise. If I removed Admin and Privilege from that module
+#	then those exercise files would no longer work. Hence, another user.py was created with just the
+#	user method included. 
+
 class User:
 	"""A class for simulated user profile details"""
 	def __init__(self, first_name, last_name, email, title):
