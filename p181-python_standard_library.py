@@ -64,5 +64,25 @@ print(results20)
 #	numbers or letters from the list and print a message saying that any ticket matching these four
 #	numbers or letters wins a prize. 
 
+from random import choice
 
+alphanumerics = ["2", "3", "5", "7", "11", "13", "17", "19", "23", "29", "E", "A", "R", "T", "H"]
 
+#	This way works but doesn't ensure that repeats do not happen.
+draw1 = choice(alphanumerics)
+draw2 = choice(alphanumerics)
+draw3 = choice(alphanumerics)
+draw4 = choice(alphanumerics)
+print("\nAny ticket matching the following four numbers or letters wins a prize:")
+print(f"{draw1} : {draw2} : {draw3} : {draw4}")
+
+#	A better way would be with a while loop
+winning_alphanumerics = []
+
+print("\nNow drawing tonight's lottery...")
+while len(winning_alphanumerics) < 4:
+	selected_alphanumeric = choice(alphanumerics)
+	if selected_alphanumeric not in winning_alphanumerics:
+		winning_alphanumerics.append(selected_alphanumeric)
+		print(f"A {selected_alphanumeric} is drawn.")
+print("The four winning selections are:" ,winning_alphanumerics)
