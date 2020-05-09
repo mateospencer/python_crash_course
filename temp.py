@@ -20,6 +20,19 @@ from random import choice
 
 def generate_winner(alphanumerics):
 	"""Generates the winning numbers for the lottery"""
+	#	First an empty list to store the numbers
 	winning_alphanumerics = []
 	
+	#	Using a while loop to make sure it loops until we have four numbers. 
+	while len(winning_alphanumerics) <4:
+		#	Randomly select out of our list of possible letters and numbers and assign it a variable
+		drawn_digit = choice(alphanumerics)
+		#	Next, will want to make sure that we don't repeat numbers
+		if drawn_digit not in winning_alphanumerics:
+			#	Add the digit to the list (if not a repeat)
+			winning_alphanumerics.append(winning_alphanumerics)
+	#	Return the full list of the winning combination
+	return(winning_alphanumerics)
+
+
 
