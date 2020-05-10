@@ -34,5 +34,17 @@ def generate_winner(alphanumerics):
 	#	Return the full list of the winning combination
 	return(winning_alphanumerics)
 
+def generate_ticket(alphanumerics):
+	picked_alphanumerics = []
+
+	while len(picked_alphanumerics) <4:
+		drawn_digit = choice(alphanumerics)
+		if drawn_digit not in picked_alphanumerics:
+			picked_alphanumerics.append(picked_alphanumerics)
+	return(picked_alphanumerics)
+
+def check_ticket(picked_alphanumerics, winning_alphanumerics)
+
+
 
 
