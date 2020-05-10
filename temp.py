@@ -24,13 +24,13 @@ def generate_winner(alphanumerics):
 	winning_alphanumerics = []
 	
 	#	Using a while loop to make sure it loops until we have four numbers. 
-	while len(winning_alphanumerics) <4:
+	while len(winning_alphanumerics) < 4:
 		#	Randomly select out of our list of possible letters and numbers and assign it a variable
 		drawn_digit = choice(alphanumerics)
 		#	Next, will want to make sure that we don't repeat numbers
 		if drawn_digit not in winning_alphanumerics:
 			#	Add the digit to the list (if not a repeat)
-			winning_alphanumerics.append(winning_alphanumerics)
+			winning_alphanumerics.append(drawn_digit)
 	#	Return the full list of the winning combination
 	return(winning_alphanumerics)
 
@@ -43,7 +43,33 @@ def generate_ticket(alphanumerics):
 			picked_alphanumerics.append(picked_alphanumerics)
 	return(picked_alphanumerics)
 
-def check_ticket(picked_alphanumerics, winning_alphanumerics)
+def check_ticket(picked_alphanumerics, winning_alphanumerics):
+	for pick in picked_alphanumerics:
+		if pick not in winning_alphanumerics:
+			return False
+	return True
+
+alphanumerics = ["2", "3", "5", "7", "11", "13", "17", "19", "23", "29", "E", "A", "R", "T", "H"]
+winning_alphanumerics = generate_winner(alphanumerics)
+
+tickets = 0
+won = False
+
+while not won:
+	new_ticket = generate_ticket(alphanumerics)
+	won = check_ticket(new_ticket, winning_alphanumerics)
+	tickets += 1
+
+if won:
+	print("We have a winner!")
+	print(f"Purchased ticket: {new_ticket}")
+	print(f"Winning ticket: {winning_alphanumerics}")
+	print(f"It took {tickets} tries to win!")
+else:
+    print(f"Tried {tickets} times, without pulling a winner. :(")
+    print(f"Purchased ticket: {new_ticket}")
+    print(f"Winning ticket: {winning_alphanumerics}")
+
 
 
 
