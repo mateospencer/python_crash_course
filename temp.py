@@ -55,10 +55,15 @@ winning_alphanumerics = generate_winner(alphanumerics)
 tickets = 0
 won = False
 
+# Let's set a max number of tries, in case this takes forever!
+max_tries = 1_000_000
+
 while not won:
 	new_ticket = generate_ticket(alphanumerics)
 	won = check_ticket(new_ticket, winning_alphanumerics)
 	tickets += 1
+	if tickets >= max_tries:
+		break
 
 if won:
 	print("We have a winner!")
