@@ -93,69 +93,71 @@ print("The four winning selections are:" ,winning_alphanumerics)
 #	a list or tuple called my_ticket. Write a loop that keeps pulling numbers until your ticket 
 #	wins. Print a message reporting how many tiems the loop had to run to give you a winning ticket.
 
-def get_winning_ticket(possibilities):
-    """Return a winning ticket from a set of possibilities."""
-    winning_ticket = []
+from random import choice
 
-    # We don't want to repeat winning numbers or letters, so we'll use a
-    #   while loop.
-    while len(winning_ticket) < 4:
-        pulled_item = choice(possibilities)
+#	need to break problem down into parts. 
 
-        # Only add the pulled item to the winning ticket if it hasn't
-        #   already been pulled.
-        if pulled_item not in winning_ticket:
-            winning_ticket.append(pulled_item)
+#	Need to create a class for getting the winning numbers. Could reuse existing code but best to
+#	approach this with a class to do the work
 
-    return winning_ticket
+#	Need another class to generating a random entry ticket. 
 
-def check_ticket(played_ticket, winning_ticket):
-    # Check all elements in the played ticket. If any are not in the 
-    #   winning ticket, return False.
-    for element in played_ticket:
-        if element not in winning_ticket:
-            return False
+#	Need a class to check the entry ticket against the winning numbers. 
 
-    # We must have a winning ticket!
-    return True
+def generate_winner(alphanumerics):
+	"""Generates the winning numbers for the lottery"""
+	#	First an empty list to store the numbers
+	winning_alphanumerics = []
+	
+	#	Using a while loop to make sure it loops until we have four numbers. 
+	while len(winning_alphanumerics) < 4:
+		#	Randomly select out of our list of possible letters and numbers and assign it a variable
+		drawn_digit = choice(alphanumerics)
+		#	Next, will want to make sure that we don't repeat numbers
+		if drawn_digit not in winning_alphanumerics:
+			#	Add the digit to the list (if not a repeat)
+			winning_alphanumerics.append(drawn_digit)
+	#	Return the full list of the winning combination
+	return winning_alphanumerics
 
-def make_random_ticket(possibilities):
-    """Return a random ticket from a set of possibilities."""
-    ticket = []
-    # We don't want to repeat numbers or letters, so we'll use a while loop.
-    while len(ticket) < 4:
-        pulled_item = choice(possibilities)
+def check_ticket(picked_alphanumerics, winning_alphanumerics):
+	for pick in picked_alphanumerics:
+		if pick not in winning_alphanumerics:
+			return False
 
-        # Only add the pulled item to the ticket if it hasn't already
-        #   been pulled.
-        if pulled_item not in ticket:
-            ticket.append(pulled_item)
+	return True
 
-    return ticket
+def generate_ticket(alphanumerics):
+	picked_alphanumerics = []
 
+	while len(picked_alphanumerics) <4:
+		drawn_digit = choice(alphanumerics)
+		if drawn_digit not in picked_alphanumerics:
+			picked_alphanumerics.append(drawn_digit)
+			
+	return picked_alphanumerics
 
-possibilities = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'a', 'b', 'c', 'd', 'e']
-winning_ticket = get_winning_ticket(possibilities)
+alphanumerics = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 'E', 'A', 'R', 'T', 'H']
+winning_alphanumerics = generate_winner(alphanumerics)
 
-plays = 0
+tickets = 0
 won = False
 
-# Let's set a max number of tries, in case this takes forever!
 max_tries = 1_000_000
 
 while not won:
-    new_ticket = make_random_ticket(possibilities)
-    won = check_ticket(new_ticket, winning_ticket)
-    plays += 1
-    if plays >= max_tries:
-        break
+	new_ticket = generate_ticket(alphanumerics)
+	won = check_ticket(new_ticket, winning_alphanumerics)
+	tickets += 1
+	if tickets >= max_tries:
+		break
 
 if won:
-    print("We have a winning ticket!")
-    print(f"Your ticket: {new_ticket}")
-    print(f"Winning ticket: {winning_ticket}")
-    print(f"It only took {plays} tries to win!")
+	print("We have a winner!")
+	print(f"Purchased ticket: {new_ticket}")
+	print(f"Winning ticket: {winning_alphanumerics}")
+	print(f"It took {tickets} tries to win!")
 else:
-    print(f"Tried {plays} times, without pulling a winner. :(")
-    print(f"Your ticket: {new_ticket}")
-    print(f"Winning ticket: {winning_ticket}")
+    print(f"Tried {tickets} times, without pulling a winner. :(")
+    print(f"Purchased ticket: {new_ticket}")
+    print(f"Winning ticket: {winning_alphanumerics}")
