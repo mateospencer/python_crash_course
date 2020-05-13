@@ -156,3 +156,9 @@ else:
     print(f"Tried {tickets} times, without pulling a winner. :(")
     print(f"Purchased ticket: {new_ticket}")
     print(f"Winning ticket: {winning_alphanumerics}")
+
+
+#	Section 9-16: Python Module of the Week
+#	One excellent resource for exploring the PYthon standard library is a site called Python Module
+#	of the Week. Go to https://pymotw.com/ and look at the table of contents. Find a module that 
+#	looks interesting to you and read about it, perhaps starting with the random module.
