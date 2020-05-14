@@ -1,3 +1,13 @@
+#	This simulates a Powerball Lottery drawing and ticket purchase. It was based off of an 
+#	exercise within Python Crash Course 2nd Edition by Eric Matthes which simulated a simple
+#	lottery drawing and analysis. There are probably better and more efficient ways of implementing
+#	this but this was just a personal exercise expanding upon the original assignment. The main
+#	difference here is that there is a powerball within a smaller number range than the other 
+#	balls. 
+
+#	Also note, this takes awhile to run. It's been limited to 100 million simulations so as not run
+#	for too long so it may exit without a winning ticket. 
+
 from random import choice
 
 winning_alphanumerics = []
