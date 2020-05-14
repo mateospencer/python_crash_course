@@ -1,8 +1,11 @@
 from random import choice
 
+winning_alphanumerics = []
+winning_powerball = []
+picked_alphanumerics = []
+picked_powerball = []
+
 def generate_winner(alphanumerics):
-	winning_alphanumerics = []
-	
 	while len(winning_alphanumerics) < 5:
 		#	Randomly select out of our list of possible letters and numbers and assign it a variable
 		drawn_digit = choice(alphanumerics)
@@ -14,8 +17,6 @@ def generate_winner(alphanumerics):
 	return winning_alphanumerics
 
 def generate_winning_powerball(powerballs):
-	winning_powerball = []
-
 	while len(winning_powerball) < 1:
 		select_winning_powerball = choice(powerballs)
 		if select_winning_powerball not in winning_alphanumerics:
@@ -31,13 +32,11 @@ def check_ticket(picked_alphanumerics, winning_alphanumerics):
 
 def check_powerball(picked_powerball, winning_powerball):
 	for winner in picked_powerball:
-		if pick  not in winning_powerball:
+		if winner not in winning_powerball:
 			return False
 	return True
 
 def generate_ticket(alphanumerics):
-	picked_alphanumerics = []
-
 	while len(picked_alphanumerics) < 5:
 		drawn_digit = choice(alphanumerics)
 		if drawn_digit not in picked_alphanumerics:
@@ -46,8 +45,6 @@ def generate_ticket(alphanumerics):
 	return picked_alphanumerics
 
 def generate_powerball(powerballs, picked_alphanumerics):
-	picked_powerball = []
-
 	while len(picked_powerball) < 1:
 		select_powerball = choice(powerballs)
 		if select_powerball not in picked_alphanumerics:
@@ -58,7 +55,7 @@ def generate_powerball(powerballs, picked_alphanumerics):
 alphanumerics = range(0, 70)
 powerballs = range(0, 27)
 winning_alphanumerics = generate_winner(alphanumerics)
-winning_powerball = generate_powerball(powerballs)
+winning_powerball = generate_winning_powerball(powerballs)
 
 tickets = 0
 won = False
@@ -70,7 +67,7 @@ while not won:
 	new_ticket = generate_ticket(alphanumerics)
 	new_powerball = generate_powerball(powerballs, picked_alphanumerics)
 	won = check_ticket(new_ticket, winning_alphanumerics)
-	hit_powerball = check_powerball(new_powerball, winning_powerball)
+	hit_powerball = check_powerball(picked_powerball, winning_powerball)
 	tickets += 1
 	if tickets >= max_tries:
 		break
