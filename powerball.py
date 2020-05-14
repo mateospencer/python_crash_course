@@ -13,14 +13,17 @@ from random import choice
 #	These had to be moved outside of the class definitions because at least one of them was used by
 #	more than one class. They didn't all need to be here but it keeps it consistent.
 
-#	Empty List to store the winning 
+#	Empty list to store the winning numbers (not including the powerball).
 winning_numbers = []
+#	Empty list to store the winning powerball number.
 winning_powerball = []
+#	Empty list to store the generated "purchased" ticket (not including the powerball).
 picked_numbers = []
+#	Empty list to store the generated "purchased" powerball. 
 picked_powerball = []
 
 def generate_winner(numbers):
-	"""Generates the winning numbers for the lottery"""
+	"""Simulates winning lottery numbers (not including the powerball)"""
 	while len(winning_numbers) < 5:
 		#	Randomly select out of our list of possible letters and numbers and assign it a variable
 		drawn_digit = choice(numbers)
@@ -32,40 +35,42 @@ def generate_winner(numbers):
 	return winning_numbers
 
 def generate_winning_powerball(powerballs):
+	"""Simulates a winning powerball number)"""
 	while len(winning_powerball) < 1:
 		select_winning_powerball = choice(powerballs)
 		if select_winning_powerball not in winning_numbers:
 			winning_powerball.append(select_winning_powerball)
-
 	return winning_powerball
 
+def generate_ticket(numbers):
+	"""Simulates a purchased lottery ticket (not including the powerball)"""
+	while len(picked_numbers) < 5:
+		drawn_digit = choice(numbers)
+		if drawn_digit not in picked_numbers:
+			picked_numbers.append(drawn_digit)
+	return picked_numbers
+
+def generate_powerball(powerballs, picked_numbers):
+	"""Simulates a purchased powerball number"""
+	while len(picked_powerball) < 1:
+		select_powerball = choice(powerballs)
+		if select_powerball not in picked_numbers:
+			picked_powerball.append(select_powerball)
+	return picked_powerball
+
 def check_ticket(picked_numbers, winning_numbers):
+	"""Checks the "purchased" lottery numbers against the winning numbers"""
 	for pick in picked_numbers:
 		if pick not in winning_numbers:
 			return False
 	return True
 
 def check_powerball(picked_powerball, winning_powerball):
+	"""Checks the "purchased" powerball number against the winning number"""
 	for winner in picked_powerball:
 		if winner not in winning_powerball:
 			return False
 	return True
-
-def generate_ticket(numbers):
-	while len(picked_numbers) < 5:
-		drawn_digit = choice(numbers)
-		if drawn_digit not in picked_numbers:
-			picked_numbers.append(drawn_digit)
-			
-	return picked_numbers
-
-def generate_powerball(powerballs, picked_numbers):
-	while len(picked_powerball) < 1:
-		select_powerball = choice(powerballs)
-		if select_powerball not in picked_numbers:
-			picked_powerball.append(select_powerball)
-
-	return picked_powerball
 
 numbers = range(0, 70)
 powerballs = range(0, 27)
