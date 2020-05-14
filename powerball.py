@@ -1,11 +1,8 @@
 from random import choice
 
 def generate_winner(alphanumerics):
-	"""Generates the winning numbers for the lottery"""
-	#	First an empty list to store the numbers
 	winning_alphanumerics = []
 	
-	#	Using a while loop to make sure it loops until we have four numbers. 
 	while len(winning_alphanumerics) < 5:
 		#	Randomly select out of our list of possible letters and numbers and assign it a variable
 		drawn_digit = choice(alphanumerics)
@@ -61,7 +58,7 @@ def generate_powerball(powerballs, picked_alphanumerics):
 alphanumerics = range(0, 70)
 powerballs = range(0, 27)
 winning_alphanumerics = generate_winner(alphanumerics)
-winning_powerball = generate_powerball(powerballs, picked_alphanumerics)
+winning_powerball = generate_powerball(powerballs)
 
 tickets = 0
 won = False
