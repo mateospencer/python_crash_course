@@ -25,18 +25,19 @@ picked_powerball = []
 def generate_winner(numbers):
 	"""Simulates winning lottery numbers (not including the powerball)"""
 	while len(winning_numbers) < 5:
-		#	Randomly select out of our list of possible letters and numbers and assign it a variable
+		#	Randomly select number from list of possible numbers and assign it a variable
 		drawn_digit = choice(numbers)
-		#	Next, will want to make sure that we don't repeat numbers
+		#	Ensures that no numbers are repeated
 		if drawn_digit not in winning_numbers:
-			#	Add the digit to the list (if not a repeat)
+			#	Adds the digit to the list (if not a repeat)
 			winning_numbers.append(drawn_digit)
-	#	Return the full list of the winning combination
+	#	Return the full five number list (representing the winning numbers)
 	return winning_numbers
 
 def generate_winning_powerball(powerballs):
 	"""Simulates a winning powerball number)"""
 	while len(winning_powerball) < 1:
+		#	Randomly select 
 		select_winning_powerball = choice(powerballs)
 		if select_winning_powerball not in winning_numbers:
 			winning_powerball.append(select_winning_powerball)
@@ -81,7 +82,7 @@ tickets = 0
 won = False
 hit_powerball = False
 
-max_tries = 100_000_000
+max_tries = 300_000_000
 
 while not won:
 	new_ticket = generate_ticket(numbers)
