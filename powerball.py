@@ -35,12 +35,15 @@ def generate_winner(numbers):
 	return winning_numbers
 
 def generate_winning_powerball(powerballs):
-	"""Simulates a winning powerball number)"""
+	"""Simulates a winning powerball number"""
 	while len(winning_powerball) < 1:
-		#	Randomly select 
+		#	Randomly select number from list of possible powerball numbers and assigns variable
 		select_winning_powerball = choice(powerballs)
+		#	Ensures that no powerball numbers are repeated
 		if select_winning_powerball not in winning_numbers:
+			#	Adds the powerball digit to a list (if not a repeat)
 			winning_powerball.append(select_winning_powerball)
+	#	Return the winning powerball
 	return winning_powerball
 
 def generate_ticket(numbers):
