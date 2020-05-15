@@ -1,3 +1,9 @@
+#	Note: This doesn't seem to work. I'm not quite sure what is the problem but I'm abandoning this for
+#	the time being until I can learn more to troubleshoot it or rewrite it more effectively. 
+#	The simulations run and numbers are generated but after 293 million simulations, I still don't
+#	get a winner. It's possible that it needs a lot more simulations but it takes too long to run
+#	and troubleshoot.
+
 #	This simulates a Powerball Lottery drawing and ticket purchase. It was based off of an 
 #	exercise within Python Crash Course 2nd Edition by Eric Matthes which simulated a simple
 #	lottery drawing and analysis. There are probably better and more efficient ways of implementing
@@ -24,7 +30,7 @@ picked_powerball = []
 
 def generate_winner(numbers):
 	"""Simulates winning lottery numbers (not including the powerball)"""
-	while len(winning_numbers) < 3:
+	while len(winning_numbers) < 5:
 		#	Randomly select number from list of possible numbers and assign it a variable
 		drawn_digit = choice(numbers)
 		#	Ensures that no numbers are repeated
@@ -49,7 +55,7 @@ def generate_winning_powerball(powerballs):
 
 def generate_ticket(numbers):
 	"""Simulates a purchased lottery ticket (not including the powerball)"""
-	while len(picked_numbers) < 3:
+	while len(picked_numbers) < 5:
 		#	Randomly select numbers from list of possible numbers and assign a variable
 		drawn_digit = choice(numbers)
 		#	Ensures that no numbers are repeated
