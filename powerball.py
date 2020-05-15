@@ -114,7 +114,7 @@ hit_powerball = False
 
 #	Configurable break for the program to keep it from running too long. Note, the real Powerball 
 #	lottery has odds of 1 in 292,201,338.
-max_tries = 293_000_000
+max_tries = 300_000_000
 
 #	Logic for generating a winner and then generating tickets to compare to incrementing if there
 #	is no winner. 
