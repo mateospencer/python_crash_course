@@ -37,9 +37,10 @@ def generate_winner(numbers):
 def generate_winning_powerball(powerballs):
 	"""Simulates a winning powerball number"""
 	while len(winning_powerball) < 1:
-		#	Randomly select number from list of possible powerball numbers and assigns variable
+		#	Randomly select number from list of possible powerball numbers and assign a variable
 		select_winning_powerball = choice(powerballs)
-		#	Ensures that no powerball numbers are repeated
+		#	Ensures that no powerball numbers are repeated (this isnt entirely needed because only
+		#	one powerball is needed but this allows the class to be consistent with rest of code)
 		if select_winning_powerball not in winning_numbers:
 			#	Adds the powerball digit to a list (if not a repeat)
 			winning_powerball.append(select_winning_powerball)
@@ -49,9 +50,13 @@ def generate_winning_powerball(powerballs):
 def generate_ticket(numbers):
 	"""Simulates a purchased lottery ticket (not including the powerball)"""
 	while len(picked_numbers) < 5:
+		#	Randomly select numbers from list of possible numbers and assign a variable
 		drawn_digit = choice(numbers)
+		#	Ensures that no numbers are repeated
 		if drawn_digit not in picked_numbers:
+			#	Adds the digit to the list (if not a repeat)
 			picked_numbers.append(drawn_digit)
+	#	Returns the picked numbers
 	return picked_numbers
 
 def generate_powerball(powerballs, picked_numbers):
@@ -85,7 +90,7 @@ tickets = 0
 won = False
 hit_powerball = False
 
-max_tries = 300_000_000
+max_tries = 1_000_000_000
 
 while not won:
 	new_ticket = generate_ticket(numbers)
