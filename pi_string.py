@@ -1,3 +1,4 @@
+### Prints Pi to 30 digits within the Pi Digits file and then counts total length of the string. 
 filename = 'pi_digits.txt'
 
 with open(filename) as file_object:
