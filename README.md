@@ -6,3 +6,4 @@ Note:
 * Some code will be inefficient because it follows what has been learned up to that point in the book. 
 * Code is excessively commented. This is because this code doubles as notes for me to refer back to or to help me with jumping back and forth between concepts. I will try to stick to PEP-8 conventions as much as possible and will update formatting as I learn it. 
 * Any feedback is welcome. I have so much to learn. 
+* I try to commit code every single day. Some days I fail. Some days I just review code. Some days I only comment on it. So, some commits might seem meaningless but they came with a lot of time spent staring at the screen trying to make things better. 
