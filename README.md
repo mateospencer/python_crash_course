@@ -1,4 +1,4 @@
-This repo collects Python exercises learned via the 2nd Edition of Eric Matthes' Python Crash Course: A Hands-on, Project-Based Introduction to Programming. The book is available via No Starch Press or Amazon (https://www.amazon.com/Python-Crash-Course-Project-Based-Introduction/dp/1593276036) and its code is available here (https://ehmatthes.github.io/pcc/).
+This repo collects Python exercises learned via the 2nd Edition of Eric Matthes' Python Crash Course: A Hands-on, Project-Based Introduction to Programming. The book is available via No Starch Press or Amazon (https://www.amazon.com/Python-Crash-Course-Project-Based-Introduction/dp/1593276036) and its code is available here (https://ehmatthes.github.io/pcc/). Additional python learning will be placed in its own repo. 
 
 Note: 
 * Some code in this repo may have purposeful errors where the assignment asked for a value to be changed to demonstrate an error. 
